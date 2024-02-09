@@ -1,0 +1,83 @@
+
+
+.main-container{
+    width: 100%;
+    height: 300px;
+    background-color: #495E57;
+    display: flex;
+    margin-top: 70px;
+    position: relative;
+    padding: 20px;
+    overflow: hidden; // Prevent content from spilling out
+   
+
+    .main-left,.main-right {
+        flex: 1; // each child will take up  half the space of the main-container
+        display: flex;
+        justify-content:center;
+        align-items:center;
+       
+    }
+
+    .main-left {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .left-content {
+            text-align: right;
+            padding: 20px;
+
+        h1{
+            font-size: 2.5rem; // rem adjust for responsiveness
+            color: #F4CE14 ;
+        }
+        h2{
+            margin: 0;
+            color: #EDEDEE;
+            font-size: 20px;
+            
+        }
+        p{
+            color: #EDEDEE;
+            font-size: 16px;
+            width: 200px;
+            margin-bottom: 1rem;
+            word-break: break-word;
+            overflow-wrap: break-word;  
+            word-wrap: break-word; 
+            word-break: break-word;
+        }
+        .btn-reserveTable {
+            border-radius: 10px;
+            padding: 10px 20px;
+            background-color: #F4CE14;
+            color: black;
+            font-size:14px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: darken(#F4CE14, 10%);
+            }
+        }}
+    }
+        .main-right{
+            padding: 10px;
+            display: flex;
+            position: absolute;
+            left: 80%;
+
+        .main-img {
+                max-width: 100%; // Ensure the image is responsive and doesn't exceed its parent
+                max-height: 100%; // Maintain aspect ratio and prevent overflow
+                width: auto; // Adjust width automatically to maintain aspect ratio
+                height: auto; // Adjust height automatically to maintain aspect ratio
+              }
+    }
+
+    }
+    
+
+
